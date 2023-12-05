@@ -12,8 +12,10 @@ class ControlMethodBase():
         return self.controller_dict
     
 
-class ControllerExample06(ControlMethodBase):
+class Example06(ControlMethodBase):
+    """ This is a nonsense 
     
+    """
     def step(self, main_dict):
         available_power = main_dict["py_sims"]["inputs"]["available_power"]
 
@@ -24,4 +26,8 @@ class ControllerExample06(ControlMethodBase):
 
 
 
+class PredefinedSignal(ControlMethodBase):
+    pass
 
+class BlockSignal(ControlMethodBase):
+    pass
