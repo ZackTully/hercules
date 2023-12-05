@@ -25,7 +25,6 @@ class Example06(ControlMethodBase):
             self.controller_dict["signal"] = -2e3
 
 
-
 class PredefinedSignal(ControlMethodBase):
     pass
 
