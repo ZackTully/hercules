@@ -362,7 +362,8 @@ class Emulator(FederateAgent):
             flush=True,
         )
         try:
-            return list(ast.literal_eval(str(msg["status"]["message"])))
+            # return list(ast.literal_eval(str(msg["status"]["message"])))
+            return list(eval(str(msg["status"]["message"])))
         except Exception as e:
             print(f"Subscription error:  {e} , returning 0s ", flush=True)
             return (

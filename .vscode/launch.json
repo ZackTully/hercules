@@ -14,6 +14,27 @@
             // "cwd": "${workspaceFolder}\\example_case_folders\\07_amr_wind_dummy_and_solar_pysam",
             "cwd": "${fileDirname}",
             "program": "standalone-solar-pysam-example.py",
+        },
+        {
+            "name": "Python: Debug example 06_amr_wind_standin_and_battery",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${fileDirname}",
+            "program": "hercules_runscript_amr_standin.py",
+            "args": ["amr_input.inp", "amr_standin_data.csv"]
+        },
+        {
+            "name": "Python: Debug example 06 hercules_runscript",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${fileDirname}",
+            "program": "hercules_runscript.py",
+            "args": ["hercules_input_000.yaml"]
         }
+
     ]
 }
