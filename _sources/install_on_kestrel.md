@@ -86,6 +86,12 @@ git switch develop
 pip install -e .
 ```
 
+If you encounter authorization issues cloning the repository, you may need to follow [these](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) steps to generate and add a SSH key to GitHub for your machine, and then set permissions for the SSH keys with:
+```
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/*
+```
+
 ### Install PySAM
 
 Note: This section is untested.
@@ -98,16 +104,6 @@ If you run hercules and get an error that `pyyaml` is missing, you may also need
 ```
 conda install -c conda-forge pyyaml
 ```
-### Install FLORIS 
-You may also want to run the FLORIS standin for AMR-Wind for a steady-state representation  of wind farm flows. 
-In this case, go back to herc_root,
-Then run
-```
-pip install git+https://github.com/NREL/floris.git@v4
-```
-to get the correct branch of FLORIS installed.
-
-Note that that pyyaml package is also required for FLORIS. 
 
 ### Install the NREL Wind Hybrid Open Controller (WHOC)
 
