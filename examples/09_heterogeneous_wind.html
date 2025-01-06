@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Example 05: FLORIS Wind Standin and Electrolyzer &#8212; HERCULES</title>
+    <title>Example 09: Heterogeneous Wind &#8212; HERCULES</title>
   
   
   
@@ -16,8 +16,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -27,10 +27,10 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -39,10 +39,10 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- So that users can add custom icons -->
-  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -73,11 +73,10 @@
                 gtag('config', 'G-3V1BDK8KEJ');
             </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'examples/05_floris_wind_standin_and_electrolyzer';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'examples/09_heterogeneous_wind';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Example 06: AMR Wind Standin and Battery" href="06_amr_wind_standin_and_battery.html" />
-    <link rel="prev" title="Examples Overview" href="../examples_overview.html" />
+    <link rel="prev" title="Example 08: FLORIS Standin Only" href="08_floris_standin_only.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -203,11 +202,11 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Examples</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../examples_overview.html">Examples Overview</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Example 05: FLORIS Wind Standin and Electrolyzer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_floris_standin_and_electrolyzer.html">Example 05: FLORIS Standin and Electrolyzer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="06_amr_wind_standin_and_battery.html">Example 06: AMR Wind Standin and Battery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="07_floris_standin_and_solar_pysam.html">Example 07: FLORIS Standin and Solar PySAM</a></li>
-<li class="toctree-l1"><a class="reference internal" href="08_floris_only.html">Example 08: FLORIS Only</a></li>
-<li class="toctree-l1"><a class="reference internal" href="09_amr_wind_openfast.html">Example 09: AMR Wind with OpenFAST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_floris_standin_only.html">Example 08: FLORIS Standin Only</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Example 09: Heterogeneous Wind</a></li>
 </ul>
 
     </div>
@@ -216,9 +215,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -279,7 +283,7 @@
       
       
       
-      <li><a href="https://github.com/NREL/hercules/edit/develop/docs/examples/05_floris_wind_standin_and_electrolyzer.md" target="_blank"
+      <li><a href="https://github.com/NREL/hercules/edit/develop/docs/examples/09_heterogeneous_wind.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -296,7 +300,7 @@
       
       
       
-      <li><a href="https://github.com/NREL/hercules/issues/new?title=Issue%20on%20page%20%2Fexamples/05_floris_wind_standin_and_electrolyzer.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/NREL/hercules/issues/new?title=Issue%20on%20page%20%2Fexamples/09_heterogeneous_wind.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -326,7 +330,7 @@
       
       
       
-      <li><a href="../_sources/examples/05_floris_wind_standin_and_electrolyzer.md" target="_blank"
+      <li><a href="../_sources/examples/09_heterogeneous_wind.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -402,7 +406,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Example 05: FLORIS Wind Standin and Electrolyzer</h1>
+    <h1>Example 09: Heterogeneous Wind</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -414,7 +418,7 @@
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#running">Running</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">Notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outputs">Outputs</a></li>
 </ul>
             </nav>
         </div>
@@ -426,22 +430,27 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="example-05-floris-wind-standin-and-electrolyzer">
-<h1>Example 05: FLORIS Wind Standin and Electrolyzer<a class="headerlink" href="#example-05-floris-wind-standin-and-electrolyzer" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="example-09-heterogeneous-wind">
+<h1>Example 09: Heterogeneous Wind<a class="headerlink" href="#example-09-heterogeneous-wind" title="Link to this heading">#</a></h1>
 <section id="description">
 <h2>Description<a class="headerlink" href="#description" title="Link to this heading">#</a></h2>
-<p>This example demonstrates how to use the FLORIS as the wind standin model combined with and electrolyzer plant in a simple case.  This example also uses a WHOC controller to allow the user to give set points to the wind farm to control the wind farm power output, set in the ‘wind_power_reference_data.csv’ file. The wind speed and wind directions inputs are given in ‘floris_standin_data.csv’ and can be changed to vary the conditions of the wind simulation. The ‘test_read_output.ipynb’ file contains a jupyter notebook that allows the user to plot the wind turbine and farm power outputs and the electrolyzer plant hydrogen output.</p>
+<p>This example runs a wind farm level power tracking controller, using FLORIS as a simulation
+testbed, with heterogeneous inflow. The control algorithm is based on the A2e2g project.
+This will the closed loop power tracking controller.</p>
 </section>
 <section id="running">
 <h2>Running<a class="headerlink" href="#running" title="Link to this heading">#</a></h2>
 <p>To run the example, execute the following command in the terminal:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash<span class="w"> </span>bash_script.sh
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash<span class="w"> </span>run_script.sh
 </pre></div>
 </div>
 </section>
-<section id="notes">
-<h2>Notes<a class="headerlink" href="#notes" title="Link to this heading">#</a></h2>
-<p>Make sure hercules conda or venv is activated before running the example.</p>
+<section id="outputs">
+<h2>Outputs<a class="headerlink" href="#outputs" title="Link to this heading">#</a></h2>
+<p>To plot the outputs run the following command in the terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>plot_outputs.py
+</pre></div>
+</div>
 </section>
 </section>
 
@@ -476,22 +485,13 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../examples_overview.html"
+       href="08_floris_standin_only.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Examples Overview</p>
+        <p class="prev-next-title">Example 08: FLORIS Standin Only</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="06_amr_wind_standin_and_battery.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Example 06: AMR Wind Standin and Battery</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -512,7 +512,7 @@
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#running">Running</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">Notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outputs">Outputs</a></li>
 </ul>
   </nav></div>
 
@@ -561,8 +561,8 @@ By National Renewable Energy Laboratory
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>
